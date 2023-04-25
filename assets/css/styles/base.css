@@ -1,0 +1,228 @@
+/*
+- ELEMENTS
+- FONTS
+- GENERICS (regras genericas. não aprendi o que é)
+- UTILITIES
+- RESET (reset de elementos)
+*/
+
+
+
+/*-----------------------------------*\
+  #FONTS
+\*-----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+/**/
+
+
+
+/*-----------------------------------*\
+  #VARIABLES
+\*-----------------------------------*/
+
+:root {
+    /**
+     * COLORS
+    */
+
+    /* Primary */
+
+    --color1: hsla(178, 80%, 58%, 1);
+    --color2: hsla(206, 84%, 22%, 1);
+    --color3: hsla(225, 14%, 53%, 1);
+    --color4: hsla(343, 100%, 58%, 1);
+
+    /* Neutral */
+
+    --neutral1: hsla(0, 0%, 100%, 1);
+    --neutral2: hsla(230, 60%, 8%, 1);
+
+
+    /**
+     * TYPOGRAPHY
+    */
+
+    /* Font Families */
+
+    --ff-body: 'Manrope', sans-serif;
+    --ff-title: ;
+
+
+    /* Font Sizes */
+
+
+    /**
+     * MEASUREMENTS
+    */
+
+
+}
+
+@media (min-width: 770px){
+    :root {
+    
+        /**
+         * TYPOGRAPHY
+        */
+    
+        /* Font Sizes */
+
+       
+
+    }
+}
+
+@media (min-width: 1100px){
+    :root {
+    
+        /**
+         * TYPOGRAPHY
+        */
+    
+        /* Font Sizes */
+
+        
+    }
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+ input,
+ button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+}
+
+
+
+
+/*-----------------------------------*\
+  #ELEMENTS
+\*-----------------------------------*/
+
+input { width: 100%; }
+
+button { cursor: pointer; }
+
+img {
+    max-width: 100%; 
+    height: auto;
+}
+
+p {
+    font-family: var(--ff-body);
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--ff-body);
+    font-weight: 800;
+}
+
+html {
+    font-family: var(--ff-body);
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--normal-fs);
+    font-family: var(--ff-body);
+    overflow-x: hidden;
+    background-color: #F2F2F2;
+    min-height: 100vh
+}
+
+
+
+
+/*-----------------------------------*\
+  #UTILITIES
+\*-----------------------------------*/
+
+.u-text { /*textos normais*/
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.u-title { /*titulo da sessão 2 e dos cards*/
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+}
+
+.u-title--x1 { /*sessão email e pricing*/
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+}
+@media (min-width: 1100px){
+    .u-title--x1 {
+        font-size: 3.2rem;
+        line-height: 4.4rem;
+    }
+}
+
+.u-title--x2 { /*sessão email e pricing*/
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+@media (min-width: 1100px){
+    .u-title--x2 {
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+    }
+}
+
+.u-underline::after {
+    content: '';
+    height: 0.2rem;
+    width: 0;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    transition: ease 250ms;
+    opacity: 0;
+}
+
+
+.u-underline:hover::after {
+    content: '';
+    height: 0.2rem;
+    width: 2.4rem;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    opacity: 1;
+}

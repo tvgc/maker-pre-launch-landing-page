@@ -1,0 +1,28 @@
+/*-----------------------------------*\
+  #L-HEADER
+\*-----------------------------------*/
+.l-header .l-container {
+    text-align: center;
+    padding-block: 4rem;
+}
+@media (min-width: 770px){
+    .l-header .l-container {
+        text-align: start;
+        padding-block: 4.8rem;        
+    }
+}
+@media (min-width: 1100px){
+    .l-header .l-container {
+        text-align: start;
+        padding-block: 8rem;        
+    }
+}
+
+/*-----------------------------------*\
+  #L-CONTAINER
+\*-----------------------------------*/
+.l-container {
+    max-width: 110rem;
+    padding-inline: 2.4rem;
+    margin-inline: auto;
+}
