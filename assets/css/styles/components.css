@@ -6,37 +6,332 @@
 /*-----------------------------------*\
   #C-HEADER
 \*-----------------------------------*/
-.l-header .o-logo {
-  
+
+
+/*-----------------------------------*\
+  #C-HERO
+\*-----------------------------------*/
+.c-hero__mobile-img {
+  margin-bottom: 4.75rem;
+}
+@media (min-width: 770px) {
+  .c-hero__mobile-img {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .c-hero__left,
+  .c-hero__right {
+    display: none;
+  }
+}
+
+@media (min-width: 770px) {
+  .c-hero__left {
+    background-image: url('../../images/illustration-hero-left.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.c-hero__content {
+  padding-inline: 2.4rem;
+  text-align: center;
+  background-image: url("../../images/bg-hero-squiggle.svg");
+}
+@media (min-width: 770px) {
+  .c-hero__content {
+    padding-inline: 0;
+    align-self: center;
+  }
+}
+
+.c-hero__title {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 2.4rem;
+  margin-top: 1.7rem;
+  padding-inline: 2rem;
+}
+@media (min-width: 500px) {
+  .c-hero__title {
+    padding-inline: 6rem;
+  }
+}
+@media (min-width: 600px) {
+  .c-hero__title {
+    padding-inline: 8rem;
+  }
+}
+@media (min-width: 700px) {
+  .c-hero__title {
+    padding-inline: 10rem;
+  }
+}
+@media (min-width: 770px) {
+  .c-hero__title {
+    padding-inline: 2rem;
+  }
+}
+@media (min-width: 1100px) {
+  .c-hero__title {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+  }
+}
+
+.c-hero__title span {
+  color: var(--color1);
+}
+
+.c-hero__desc {
+  line-height: 2.5rem;
+  margin-bottom: 3.2rem;
+}
+
+@media (min-width: 770px) {
+  .c-hero__right {
+    background-image: url('../../images/illustration-hero-right.svg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 
 /*-----------------------------------*\
-  #C-CARD
+  #C-ABOUT
 \*-----------------------------------*/
+.c-about__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.6rem;
+}
+@media (min-width: 700px) {
+  .c-about__items {    
+    padding-inline: 7.4rem;
+  }
+}
+@media (min-width: 1100px) {
+  .c-about__items {    
+    flex-direction: row;
+    padding-inline: 0;
+    gap: 3rem;
+    height: 38.3rem;
+  }
+}
 
 
-/*-----------------------------------*\
-  #C-HOME
-\*-----------------------------------*/
+.c-about__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+@media (min-width: 700px) {
+  .c-about__item {    
+  flex-direction: row;
+  gap: 5.5rem;
+  }
 
+  .c-about__item:nth-child(even) {
+    align-self: flex-start;
+  }
 
+  .c-about__item:nth-child(odd) {
+    align-self: flex-end;
+  }
+}
+@media (min-width: 1100px) {
+  .c-about__item {    
+  flex-direction: column;
+  gap: 4.8rem;
+  align-items: start;
+  }
 
+  .c-about__item:nth-child(odd) {
+    align-self: flex-start;
+  }
 
-/*-----------------------------------*\
-  #C-ADVANTAGES
-\*-----------------------------------*/
+  .c-about__item:nth-child(even) {
+    align-self: flex-end;
+  }
+}
 
+.c-about__img-box {
+  width: 12rem;
+  height: 12.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color2);
+  border-radius: 4.5rem;
+}
+@media (min-width: 1100px) {
+  .c-about__img-box {    
+  width: 16rem;
+  height: 16.4rem;
+  }
+}
 
+.c-about__item:nth-child(1) .c-about__img {
+  width: 6.6rem;
+  height: 8rem;
+}
+@media (min-width: 1100px) {
+  .c-about__item:nth-child(1) .c-about__img {
+    width: 8.8rem;
+    height: 10.6rem;
+  }
+}
 
+.c-about__item:nth-child(2) .c-about__img {
+  width: 5.6rem;
+  height: 6.7rem;
+}
+@media (min-width: 1100px) {
+  .c-about__item:nth-child(2) .c-about__img {
+    width: 7.4rem;
+    height: 8.9rem;
+  }
+}
 
+.c-about__item:nth-child(3) .c-about__img {
+  width: 6rem;
+  height: 7.1rem;
+}
+@media (min-width: 1100px) {
+  .c-about__item:nth-child(3) .c-about__img {
+    width: 8rem;
+    height: 9.4rem;
+  }
+}
+
+.c-about__item:nth-child(4) .c-about__img {
+  width: 7.8rem;
+  height: 5.6rem;
+}
+@media (min-width: 1100px) {
+  .c-about__item:nth-child(4) .c-about__img {
+    width: 10.4rem;
+    height: 7.4rem;
+  }
+}
+
+.c-about__content {
+  text-align: center;
+  max-width: 32.7rem;
+}
+@media (min-width: 600px) {
+  .c-about__content {
+    text-align: start;
+  }
+}
+
+.c-about__title {
+  margin-bottom: 1.1rem;
+  font-size: 1.8rem;
+  line-height: 2.459rem;
+}
+@media (min-width: 1100px) {
+  .c-about__title {
+    margin-bottom: 2.3rem;
+  }
+}
 
 /*-----------------------------------*\
   #C-PLANS
 \*-----------------------------------*/
+.c-plans__title-box {
+  text-align: center;
+  max-width: 54rem;
+  margin-inline: auto;
+  margin-bottom: 5.6rem;
+}
+@media (min-width: 1100px) {
+  .c-plans__title-box {
+    margin-bottom: 7.2rem;
+  }
+}
 
+.c-plans__title {
+  font-size: 2.4rem;
+  line-height: 3.3rem;
+  margin-bottom: 2.7rem;
+}
+@media (min-width: 770px) {
+  .c-plans__title {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+}
 
+.c-plans__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.4rem;
+}
+@media (min-width: 770px) {
+  .c-plans__cards {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
+.c-plans__card {
+  padding: 4.8rem 3rem;
+  position: relative;
+  max-width: 23.7rem;
+  background-color: var(--color2);
+  color: #FFFFFF;
+}
+@media (min-width: 770px) {
+  .c-plans__card {
+    padding: 6rem 3.8rem;
+    position: relative;
+  }
+}
+.c-plans__img {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.c-plans__card-title {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.9rem;
+}
+
+.c-plans__desc {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 2.4rem;  
+}
+
+.c-plans__price {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 5.5rem;
+  margin-bottom: 1.9rem;
+}
+
+.c-plans__item {
+  display: flex;
+  gap: 1.532rem;
+}
+
+.c-plans__check {
+  background-color: var(--color1);
+  fill: var(--color1);
+  color: var(--color1);
+}
+
+/* criar um componente modificado para o segundo card, pois o padding-block é maior, alem da cor */
 
 /*-----------------------------------*\
   #C-EMAIL

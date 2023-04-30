@@ -50,7 +50,7 @@
 
 
     /* Font Sizes */
-
+    --fs-standard: 1.5rem;
 
     /**
      * MEASUREMENTS
@@ -134,7 +134,6 @@ img {
 }
 
 p {
-    font-family: var(--ff-body);
     font-weight: 500;
 }
 
@@ -144,6 +143,7 @@ h3,
 h4 {
     font-family: var(--ff-body);
     font-weight: 800;
+    color: #FFFFFF;
 }
 
 html {
@@ -153,10 +153,11 @@ html {
 }
 
 body {
-    font-size: var(--normal-fs);
+    font-size: var(--fs-standard);
     font-family: var(--ff-body);
     overflow-x: hidden;
-    background-color: #F2F2F2;
+    background-color: #080C20;
+    color: var(--color3);
     min-height: 100vh
 }
 
