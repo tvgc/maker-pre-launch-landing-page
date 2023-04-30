@@ -275,23 +275,26 @@
   align-items: center;
   gap: 6.4rem;
 }
-@media (min-width: 770px) {
+@media (min-width: 1100px) {
   .c-plans__cards {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
   }
 }
 
 .c-plans__card {
   padding: 4.8rem 3rem;
   position: relative;
-  max-width: 23.7rem;
+  max-width: 33.7rem;
   background-color: var(--color2);
   color: #FFFFFF;
+  border-radius: 0.8rem;
 }
 @media (min-width: 770px) {
   .c-plans__card {
-    padding: 6rem 3.8rem;
+    padding: 4.6rem 3.8rem;
     position: relative;
   }
 }
@@ -305,6 +308,7 @@
   font-size: 1.8rem;
   line-height: 2.5rem;
   margin-bottom: 1.9rem;
+  color: inherit;
 }
 
 .c-plans__desc {
@@ -318,17 +322,34 @@
   font-weight: 800;
   line-height: 5.5rem;
   margin-bottom: 1.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.c-plans__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .c-plans__item {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   gap: 1.532rem;
 }
 
-.c-plans__check {
+.c-plans__card--light {
   background-color: var(--color1);
-  fill: var(--color1);
-  color: var(--color1);
+  color: var(--neutral2);
+  padding: 6.1rem 3.8rem;
+}
+.c-plans__card--light .c-plans__price::after {
+  content: '/ month';
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  margin-left: 0.75rem;
 }
 
 /* criar um componente modificado para o segundo card, pois o padding-block é maior, alem da cor */
