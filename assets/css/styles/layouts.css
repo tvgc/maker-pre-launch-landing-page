@@ -76,18 +76,39 @@
 }
 
 /*-----------------------------------*\
-  #L-ABOUT
+  #L-PLANS
 \*-----------------------------------*/
-.l-newsletter {
+.l-plans {
     margin-bottom: 14.4rem;
 }
 @media (min-width: 770px) {
-    .l-about {
+    .l-plans {
         margin-bottom: 11.9rem;
     }
 }
 @media (min-width: 1100px) {
-    .l-about {
-        margin-bottom: 15.1rem;
+    .l-plans {
+        margin-bottom: 15rem;
+    }
+}
+
+/*-----------------------------------*\
+  #L-NEWSLETTER
+\*-----------------------------------*/
+.l-newsletter {
+    background-image: url('../../images/bg-footer-squiggle.svg');  
+    background-size: contain;  
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-bottom: 16.4rem;
+}
+@media (min-width: 770px) {
+    .l-newsletter {
+        margin-bottom: 10.5rem;
+    }
+}
+@media (min-width: 1100px) {
+    .l-newsletter {
+        margin-bottom: 11.7rem;
     }
 }
